@@ -433,7 +433,8 @@ hr {
                    false true,//8192
                    false true,//16384
                    false true,//32768
-                   false true;//65536
+                   false true,//65536
+                   false true;//131072
 
   // Build tile colors
   @while $exponent <= $limit {
