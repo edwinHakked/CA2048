@@ -346,7 +346,12 @@ hr {
                    false true, // 256
                    false true, // 512
                    false true, // 1024
-                   false true; // 2048
+                   false true,// 2048
+                   false true,//4096
+                   false true,//8192
+                   false true,//16384
+                   false true,//32768
+                   false true;//65536
 
   // Build tile colors
   @while $exponent <= $limit {
@@ -383,14 +388,14 @@ hr {
 
       // Adjust font size for bigger numbers
       @if $power >= 100 and $power < 1000 {
-        font-size: 45px;
+        font-size: 30px;
 
         // Media queries placed here to avoid carrying over the rest of the logic
         @include smaller($mobile-threshold) {
-          font-size: 25px;
+          font-size: 15px;
         }
       } @else if $power >= 1000 {
-        font-size: 35px;
+        font-size: 30px;
 
         @include smaller($mobile-threshold) {
           font-size: 15px;
