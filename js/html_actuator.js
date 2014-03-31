@@ -80,7 +80,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   displayText[13] = "AC";
   displayText[14] = "CA";
   
-  inner.textContent = displayText[tile.dp];
+  inner.textContent = displayText[(Math.log(tile.value)/Math.LN2)-1];
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
